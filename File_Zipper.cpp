@@ -200,6 +200,6 @@ int main(){
 	getline(cin,inputString);
 	encode(inputString);
 	decode();
-	float compressionRatio=encodedText.length()/float(decodedText.length());
+	float compressionRatio=float(decodedText.length())/encodedText.length();
 	cout<<endl<<endl<<"The compression ratio is: "<<compressionRatio<<endl;
 }
